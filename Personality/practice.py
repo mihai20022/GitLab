@@ -1,3 +1,5 @@
-print('Hello')
+import pandas as pd
+import numpy as np
 
-print('test')
+df = pd.read_csv('./Personality/personality_dataset.csv')
+print(df.head())
