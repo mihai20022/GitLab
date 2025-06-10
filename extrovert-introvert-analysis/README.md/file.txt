@@ -1,0 +1,6 @@
+1. Research Questions
+- Build machine learning models to predict personality types.
+- Analyze correlations between social behaviors and personality traits.
+- Explore social media engagement patterns.
+- Practice data preprocessing techniques like imputation and encoding.
+- Create visualizations to uncover behavioral trends.
