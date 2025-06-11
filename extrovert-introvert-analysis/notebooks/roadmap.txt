@@ -1,0 +1,57 @@
+1. Impute or Drop
+
+- <5%, impute or drop,
+-  5-20%, impute preffered
+- >20%, mostly drop, input only when the feature is important
+
+2. Data Cleaning
+
+In order to impute, the types of data should be considered:
+numeric:
+- Mean. Data is numeric. The distribution is normal. There are few outliers.
+- Median. Data is numeric or ordinal. Distribution is skewed. There are outliers.
+- Mode. Data is categorical. Ordinal categories. Binary columns.
+
+***for numeric, the distribution should be checked. Normal -> mean, skewed -> median
+
+In the personality_dataset, the distributions are skewed to the right. To preserve the consistency I will use median.
+
+3. Exploratory Data Analysis
+
+- Understand how your features behave (distribution, variability)
+- See how features correlate
+- Explore how features differ my personaly time.
+
+3.1 Compare Numeric Columns by Personality Type 
+
+Really important to group by label and assess the mean.
+In this dataset, some insights were depicted:
+- Introverts spend more time alone. 
+- Extroverts has a higher social attendance.
+- Extroverts are going outside more.
+- Introverts has a smaller friends circle.
+- Extroverts post more frequently.
+
+3.2 Compare Binary / Categorical Features by Personality Type
+pd.crosspad(df1, df2, normalize='index')
+
+Stage_fear         No       Yes
+Personality                    
+Extrovert    0.925553  0.074447
+Introvert    0.078070  0.921930
+Drained_after_socializing        No       Yes
+Personality                                  
+Extrovert                  0.925553  0.074447
+Introvert                  0.080199  0.919801
+
+Extroverts are mostly without Stage_fear
+Introverts are mostly drained after socializing.
+
+
+
+4. Correlation between features.
+
+- Understand which behaviors tend to rise or fall together.
+- Detect redundant features (two features too closely related).
+- Spot unexpected relationships between behaviors.
+- Get a sense of predictive power: features correlated with the target.
