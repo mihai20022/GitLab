@@ -4,3 +4,7 @@
 - Explore social media engagement patterns.
 - Practice data preprocessing techniques like imputation and encoding.
 - Create visualizations to uncover behavioral trends.
+
+
+1 - Extrovert
+0 - Introvert

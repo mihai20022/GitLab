@@ -55,3 +55,26 @@ Introverts are mostly drained after socializing.
 - Detect redundant features (two features too closely related).
 - Spot unexpected relationships between behaviors.
 - Get a sense of predictive power: features correlated with the target.
+
+ Correlated Features 
+Time_Spent_alone and Stage_fear 0.83
+Time_Spent_alone and Drained_after_socializing 0.83
+Stage_fear and Drained_after_socializing 0.96
+Stage_fear other besides Drained_after_socializing -0.81 up to -0.86
+
+Keeping strong positive correlation might introduce multicollinearity and lead to overfitting or unstable feature importance.
+
+Which columns to drop in case of positive correlation:
+1. Theoretical Meaning:
+- Stage_fear is specific
+- Drained_after_socializing is broader
+
+2.Distribution
+
+The distribution are 50/50 for both
+
+3. Correlation with Target 
+
+They are both strong negative correlated with Personality.
+
+Decided to drop Stage_fear
