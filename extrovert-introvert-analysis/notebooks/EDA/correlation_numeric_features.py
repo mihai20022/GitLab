@@ -41,6 +41,6 @@ print(df['Drained_after_socializing'].value_counts(normalize=True))
 
 print(df.corr()['Personality'].sort_values())
 
-df.drop(columns=['Stage_fear'])
+df = df.drop(axis= 1, columns=['Stage_fear'])
 
-df.to_csv('extrovert-introvert-analysis/data/final_dataset.csv')
+df.to_csv('extrovert-introvert-analysis/data/dataset_ready_modeling.csv')
