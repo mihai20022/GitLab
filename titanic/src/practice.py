@@ -1,5 +1,6 @@
 import pandas as pd
 
-train_data ='/titanic/data/train.csv'
-print(train_data)
+train_data =pd.read_csv('./titanic/data/train.csv')
+print(train_data.head())
+
 
