@@ -1,0 +1,13 @@
+Summary of the roadmap.
+
+Preprocessing data:
+- scaling
+- get dummies for categorical columns with more than 2 values
+- mean or median for the null values
+
+
+Models used:
+
+Linear model - only captures straight-line relationships. Coefficient of determination is 0.704
+Lasso Ridge - Ridge model have been tested. Adds penalties to reduce overfitting. The coefficient of determination is 0.706
+Decision Tree Regressor - Captures non-linear relationships and interactions. Single trees can overfit. Coefficient of determination is 0.75
